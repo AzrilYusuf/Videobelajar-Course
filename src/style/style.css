@@ -38,7 +38,7 @@ body {
     justify-content: center;
     width: 237px;
     height: 56px;
-    margin-left: 110px;
+    margin-left: 7%;
 }
 
 .form-content {
@@ -69,11 +69,15 @@ input {
 }
 
 .forgot-password {
-    margin-left: auto; 
+    margin-left: auto;
     margin-top: 5px;
     font-size: 16px;
     color: #333333AD;
     text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: #38bb45;
 }
 
 .authentication-button {
@@ -147,4 +151,17 @@ a {
 
 .google-button:hover {
     background-color: #eeeeee;
+}
+
+
+/** For Mobile */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 16px, 24px, 16px, 24px;
+    }
+
+    .logo {
+        width: 144.77px;
+        height: 22.56px;
+    }
 }
