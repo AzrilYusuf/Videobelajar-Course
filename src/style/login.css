@@ -1,3 +1,4 @@
+/** Desktop first */
 .login {
     display: flex;
     flex-direction: column;
@@ -11,13 +12,6 @@
     border-radius: 4px;
 }
 
-.title-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .login-form {
     display: flex;
     flex-direction: column;
@@ -26,6 +20,39 @@
     gap: 16px;
 }
 
+.authentication-button {
+    margin-top: 50px;
+    gap: 16px;
+}
+
+.login-button {
+    background-color: #3ECF4C;
+    color: #FFFFFF;
+}
+
+.login-button:hover {
+    background-color: #38bb45;
+}
+
+.login-button:active {
+    background-color: #3ECF4C;
+}
+
+.register-button {
+    background-color: #E2FCD9CC;
+    color: #3ECF4C;
+}
+
+.register-button:hover {
+    background-color: #d5eecdcc;
+    color: #3ECF4C;
+}
+
+.register-button:active {
+    background-color: #E2FCD9CC;
+}
+
+/** Mobile screen */
 @media (max-width: 480px) {
     .login {
         width: 90%;
