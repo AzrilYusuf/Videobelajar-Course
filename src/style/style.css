@@ -76,19 +76,61 @@ input {
     color: #222325;
 }
 
+input:focus {
+    outline: none;
+}
+
+#password {
+    position: relative;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 33%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#togglePassword:focus {
+    outline: none;
+}
+
+#confirmPassword {
+    position: relative;
+}
+
+#toggleConfirmPassword {
+    position: absolute;
+    right: 33%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#toggleConfirmPassword:focus {
+    outline: none;
+}
+
 .pnumber-select {
     display: flex;
     gap: 24px;
 }
 
-#phone-number {
-    height: 55px;
+#phoneNumber {
+    height: 48px;
     padding: 4px 10px;
     border: 1px solid #e3e3e3;
     border-radius: 6px;
     font-size: 16px;
     letter-spacing: 0.2px;
     color: #222325;
+}
+
+#phoneNumber:focus {
+    outline: none;
 }
 
 .forgot-password {
