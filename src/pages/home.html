@@ -88,19 +88,12 @@
       <!-- Tagline -->
       <section class="tagline-container">
         <div class="tagline">
-          <h1
-            style="
-              font-weight: 700;
-              font-size: 48px;
-              color: #ffff;
-              line-height: 52.8px;
-            "
-          >
+          <h1>
             Revolusi Pembelajaran: Temukan<br />
             Ilmu Baru melalui Platform Video<br />
             Interaktif!
           </h1>
-          <p style="color: #ffff; line-height: 22.4px; letter-spacing: 0.2px">
+          <p>
             Temukan ilmu baru yang menarik dan mendalam melalui koleksi video
             pembelajaran berkualitas tinggi. Tidak hanya itu,<br />
             Anda juga dapat berpartisipasi dalam latihan interaktif yang akan
@@ -119,7 +112,7 @@
           <p>Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!</p>
         </div>
         <ul class="content-list">
-          <li><a href="./home.html" style="color: #F64920;">Semua Kelas</a></li>
+          <li><a href="./home.html" style="color: #f64920">Semua Kelas</a></li>
           <li><a href="#">Pemasaran</a></li>
           <li><a href="#">Desain</a></li>
           <li><a href="#">Pengembangan Diri</a></li>
@@ -135,20 +128,9 @@
       <section class="newsletter-container">
         <div class="newsletter">
           <div style="display: flex; flex-direction: column; gap: 4px">
-            <h3 style="font-weight: 400; text-transform: uppercase">
-              newsletter
-            </h3>
-            <h1 style="font-size: 32px; font-weight: 600; line-height: 35.2px">
-              Mau Belajar Lebih Banyak&quest;
-            </h1>
-            <p
-              style="
-                color: #ffff;
-                font-weight: 400;
-                line-height: 22.4px;
-                letter-spacing: 0.2px;
-              "
-            >
+            <h3>newsletter</h3>
+            <h1>Mau Belajar Lebih Banyak&quest;</h1>
+            <p>
               Daftarkan dirimu untuk mendapatkan informasi terbaru dan<br />
               penawaran spesial dari program-program terbaik hariesok.id
             </p>
@@ -244,8 +226,24 @@
           </div>
           <div class="company-info">
             <div class="footer-list">
-              <p>Kategori</p>
-              <ul>
+              <p class="dropdown-header" onclick="toggleDropdown()">
+                Kategori
+                <svg
+                  style="display: none"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.58984 16.59L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.59Z"
+                    fill="#3A3541"
+                    fill-opacity="0.54"
+                  />
+                </svg>
+              </p>
+              <ul class="dropdown-content">
                 <li>Digital & Teknologi</li>
                 <li>Pemasaran</li>
                 <li>Manajemen Bisnis</li>
@@ -254,8 +252,24 @@
               </ul>
             </div>
             <div class="footer-list">
-              <p>Perusahaan</p>
-              <ul>
+              <p class="dropdown-header" onclick="toggleDropdown()">
+                Perusahaan
+              </p>
+              <svg
+                style="display: none"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.58984 16.59L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.59Z"
+                  fill="#3A3541"
+                  fill-opacity="0.54"
+                />
+              </svg>
+              <ul class="dropdown-content">
                 <li>Tentang Kami</li>
                 <li>FAQ</li>
                 <li>Kebijakan Privasi</li>
@@ -264,8 +278,24 @@
               </ul>
             </div>
             <div class="footer-list">
-              <p>Komunitas</p>
-              <ul>
+              <p class="dropdown-header" onclick="toggleDropdown()">
+                Komunitas
+              </p>
+              <svg
+                style="display: none"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.58984 16.59L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.59Z"
+                  fill="#3A3541"
+                  fill-opacity="0.54"
+                />
+              </svg>
+              <ul class="dropdown-content">
                 <li>Tip Sukses</li>
                 <li>Blog</li>
               </ul>
@@ -274,7 +304,7 @@
         </div>
         <div class="footer-divider"></div>
         <div class="copyrights">
-          <div>&#64;2023 Gerobak Sayur All Rights Reserved.</div>
+          <div>&#64;2024 Gerobak Sayur All Rights Reserved.</div>
           <div style="display: flex; gap: 15px">
             <!-- LinkedIn -->
             <div class="footer-social">
