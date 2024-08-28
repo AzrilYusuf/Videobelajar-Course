@@ -139,3 +139,10 @@ const cards = [
     container.appendChild(cardDiv);
   });
   
+//   Dropdown
+const toggleDropdown = () => {
+    console.log("Dropdown toggled")
+    const footerList = document.querySelector('.footer-list');
+    footerList.classList.toggle('active');
+  }  
+  
