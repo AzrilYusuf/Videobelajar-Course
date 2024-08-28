@@ -47,3 +47,5 @@ toggleConfirmPassword.addEventListener("click", function () {
     </svg>`;
   }
 });
+
+
