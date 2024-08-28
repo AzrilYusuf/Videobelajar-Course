@@ -27,6 +27,9 @@
 
 .login-button {
     background-color: #3ECF4C;
+}
+
+.login-button a {
     color: #FFFFFF;
 }
 
@@ -40,6 +43,9 @@
 
 .register-button {
     background-color: #E2FCD9CC;
+}
+
+.register-button a {
     color: #3ECF4C;
 }
 
