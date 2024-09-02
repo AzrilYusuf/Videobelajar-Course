@@ -139,10 +139,43 @@ const cards = [
     container.appendChild(cardDiv);
   });
   
-//   Dropdown
-const toggleDropdown = () => {
-    console.log("Dropdown toggled")
-    const footerList = document.querySelector('.footer-list');
-    footerList.classList.toggle('active');
-  }  
-  
+// Accordion
+const initializeAccordion = () => {
+  const headings = document.querySelectorAll(".accordion-header");
+
+  const toggleAccordion = (event) => {
+    const heading = event.currentTarget;
+    heading.classList.toggle("active");
+
+    const targetId = heading.getAttribute("data-target");
+    const targetContent = document.querySelector(targetId);
+    const isOpen = heading.classList.contains("active");
+
+    if (isOpen) {
+      targetContent.style.maxHeight = targetContent.scrollHeight + "px";
+    } else {
+      targetContent.style.maxHeight = "0";
+    }
+  }
+
+  headings.forEach((heading) => {
+    heading.addEventListener("click", toggleAccordion);
+  });
+}
+
+const checkScreenSize = () => {
+  if (window.matchMedia("(max-width: 480px)").matches) {
+    initializeAccordion();
+  } else {
+    document.querySelectorAll(".accordion-header").forEach((heading) => {
+      heading.removeEventListener("click", toggleAccordion);
+    });
+
+    document.querySelectorAll(".accordion-content").forEach((list) => {
+      list.style.maxHeight = "none";
+    });
+  }
+}
+
+checkScreenSize();
+window.addEventListener("size", checkScreenSize);

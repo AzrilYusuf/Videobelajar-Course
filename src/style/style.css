@@ -493,9 +493,14 @@ footer {
     gap: 13px;
 }
 
+.accordion-header svg {
+    visibility: hidden;
+}
+
 .footer-divider {
     grid-area: divider;
     width: 100%;
+    background-color: #FFFFFF;
     border-top: 1px solid #d8d8d8cc;
 }
 
@@ -627,6 +632,7 @@ footer {
     footer {
         grid-template-rows: 1fr 1% 15%;
         padding: 20px;
+        background-color: #FFFFFF;
         gap: 16px;
     }
 
@@ -635,6 +641,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: start;
+        background-color: #FFFFFF;
         gap: 16px;
     }
 
@@ -654,8 +661,8 @@ footer {
         padding: 0px;
         gap: 12px;
     }
-    
-    .dropdown-header {
+
+    .accordion-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -663,21 +670,18 @@ footer {
         cursor: pointer;
     }
 
-    .dropdown-header svg {
-        display: block !important;
+    .accordion-header svg {
+        visibility: visible;
     }
-    
-    .dropdown-content {
-        display: none !important;
-        flex-direction: column;
-        gap: 8px;
-        padding: 0;
-        list-style: none;
-        width: 100%;
+
+    .accordion-header.active svg {
+        transform: rotate(90deg);
     }
-    
-    .footer-list.active .dropdown-content {
-        display: flex;
+
+    .accordion-content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
     }
 
     .copyrights {
@@ -685,6 +689,7 @@ footer {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: start;
+        background-color: #FFFFFF;
         gap: 12px;
     }
 }
